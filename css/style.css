@@ -3,9 +3,7 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
@@ -14,18 +12,6 @@
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(icomoon.css);
-@import url(font-awesome.min.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -235,6 +221,97 @@ button {
      padding: 0;
 }
 
+.flex-container {
+     display: flex;
+}
+
+header {
+     justify-content: space-between;
+     width: 100%;
+     padding: 30px 30px;
+     background: transparent;
+     position: absolute;
+     z-index: 999;
+}
+
+nav {
+     justify-content: right;
+     margin-right: 5%;
+     font-size: 20px;
+}
+
+nav a {
+     color: #fff;
+}
+
+nav a:hover {
+     color: #51fe44;
+}
+
+.banner_content {
+     justify-content: space-evenly;
+     margin: auto 15%;
+}
+
+.banner_content * {
+     flex: 1;
+}
+
+.banner_main {
+     background: url(../images/banner.jpg);
+     background-repeat: no-repeat;
+     min-height: 900px;
+     background-size: 100% 100%;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     position: relative;
+}
+
+.products-container {
+     margin-top: 90px;
+     margin-bottom: 90px;
+     background: #f7f7f7;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: space-evenly;
+     min-height: 1500px;
+}
+
+.products-items {
+     flex: 1;
+     display: grid;
+     width: 100%;
+     grid-template-rows: repeat(3 ,1fr);
+     grid-template-columns: repeat(3 ,1fr);
+     justify-items: center;
+     row-gap: 10%;
+     align-items: center;
+     margin: 10%;
+}
+
+.product_box {
+     text-align: center;
+}
+
+.product_box h3 {
+     width: 200px;
+     color: #fff;
+     font-size: 20px;
+     line-height: 20px;
+     background-color: #252525;
+     font-weight: 500;
+     margin: 0 auto;
+     padding: 10px 0;
+     margin-top: 40px;
+     transition: ease-in all 0.5s;
+}
+
+.product_box h3:hover {
+    background: #48ca95;
+}
 
 /**-- heading section --**/
 
@@ -362,11 +439,6 @@ ul.btn li:last-child {
 }
 
 .header {
-     width: 100%;
-     padding: 30px 30px;
-     background: transparent;
-     position: absolute;
-     z-index: 999;
 }
 
 .logo a {
@@ -379,38 +451,6 @@ ul.btn li:last-child {
 
 
 /** banner section **/
-
-.banner_main {
-     background: url(../images/banner.jpg);
-     background-repeat: no-repeat;
-     min-height: 900px;
-     background-size: 100% 100%;
-     display: flex;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
-     position: relative;
-}
-.banner_main::before {
-     position: absolute;
-     content: "";
-     width:50px; 
-     height:40px;
-     background: url(../images/cross.png);
-     background-repeat: no-repeat;
-     bottom: -38px;
-     right: 38px;
-}
-.banner_main::after {
-     position: absolute;
-     content: "";
-     width:50px; 
-     height:40px;
-     background: url(../images/cross.png);
-     background-repeat: no-repeat;
-     bottom: -38px;
-     left: 38px;
-}
 .text-bg {
      text-align: left;
 }
@@ -433,6 +473,7 @@ ul.btn li:last-child {
 }
 
 .text-bg p {
+     color: #fff;
      line-height: 28px;
      font-weight: 500;
      padding-bottom: 60px;
@@ -662,18 +703,20 @@ ul.btn li:last-child {
 
 /** laptop  section **/
 
-.laptop {
+.black_friday {
      font-family: 'Dosis', sans-serif;
      padding: 130px 0;
      background-color: #4f4aa6;
+     display: flex;
+     justify-content: center;
 }
 
-.laptop .titlepage {
+.black_friday .titlepage {
      text-align: left;
      padding-bottom: 0;
 }
 
-.laptop .titlepage p {
+.black_friday .titlepage p {
      color: #fff;
      display: block;
      font-size: 40px;
@@ -682,7 +725,7 @@ ul.btn li:last-child {
      line-height: 40px;
 }
 
-.laptop .titlepage h2 {
+.black_friday .titlepage h2 {
      text-transform: none;
      font-size: 80px;
      color: #fff;
@@ -692,21 +735,16 @@ ul.btn li:last-child {
      line-height: 80px;
 }
 
-.laptop_box {
+.black_friday_box {
      margin-right: -50px;
 }
 
-.laptop_box figure {
+.black_friday_box figure {
      margin: 0;
 }
 
 .margin_bottom {
      margin-bottom: 30px;
-}
-
-.laptop .read_more {
-     display: block;
-     margin-top: 60px;
 }
 
 
@@ -797,7 +835,8 @@ ul.btn li:last-child {
 .main_form {
      padding: 70px 50px;
      border: #fff solid 2px;
-     margin: 0 50px;
+     margin: 0 auto;
+     width: 65%;
 }
 
 .main_form .contactus {
@@ -858,23 +897,27 @@ ul.btn li:last-child {
 
 /** footer **/
 
-.footer {
+footer {
      background: url(../images/footer.jpg);
-     background-repeat: no-repeat;
      background-size: 100% 100%;
      padding-top: 115px;
      text-align: center;
 }
 
-.footer .titlepage {
+footer .titlepage {
      text-align: left;
      padding-bottom: 0px;
 }
 
-.footer .titlepage h2 {
+footer .titlepage h2 {
      color: #fff;
      margin: inherit;
      border-bottom: #fff solid 1px;
+}
+
+.footer-content {
+     display: flex;
+     justify-content: center;
 }
 
 .logo1 {
