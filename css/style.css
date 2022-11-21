@@ -25,10 +25,12 @@ html {
 
 body {
      color: #666666;
+     background-color: #fff;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
+     margin: 0;
 }
 
 a {
@@ -142,6 +144,15 @@ img {
      height: auto;
 }
 
+table, th, td {
+     border: 2px solid;
+     text-align: center;
+}
+
+th, td {
+     padding: 2%;
+}
+
  :focus {
      outline: 0;
 }
@@ -242,6 +253,7 @@ nav {
 
 nav a {
      color: #fff;
+     margin-right: 7%;
 }
 
 nav a:hover {
@@ -311,6 +323,26 @@ nav a:hover {
 
 .product_box h3:hover {
     background: #48ca95;
+}
+
+.latest-product-container {
+     margin-top: 90px;
+     margin-bottom: 90px;
+     background: #f7f7f7;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: space-evenly;
+     min-height: 1500px;
+}
+
+.latest-product-container > * {
+     margin: 2.5% 0;
+}
+
+.latest-product-spec {
+     display: flex;
+     justify-content: space-evenly;
 }
 
 /**-- heading section --**/
@@ -436,9 +468,6 @@ ul.btn li:last-child {
 
 .sign_btn a:hover {
      color: #fff;
-}
-
-.header {
 }
 
 .logo a {
