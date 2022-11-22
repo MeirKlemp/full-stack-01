@@ -150,7 +150,7 @@ table, th, td {
 }
 
 th, td {
-     padding: 2%;
+     padding: 15px;
 }
 
  :focus {
@@ -232,11 +232,8 @@ button {
      padding: 0;
 }
 
-.flex-container {
-     display: flex;
-}
-
 header {
+     display: flex;
      justify-content: space-between;
      width: 100%;
      padding: 30px 30px;
@@ -246,6 +243,7 @@ header {
 }
 
 nav {
+     display: flex;
      justify-content: right;
      margin-right: 5%;
      font-size: 20px;
@@ -263,6 +261,11 @@ nav a:hover {
 .banner_content {
      justify-content: space-evenly;
      margin: auto 15%;
+     min-height: 900px;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
 }
 
 .banner_content * {
@@ -272,12 +275,7 @@ nav a:hover {
 .banner_main {
      background: url(../images/banner.jpg);
      background-repeat: no-repeat;
-     min-height: 900px;
-     background-size: 100% 100%;
-     display: flex;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
+     background-size: 100% auto;
      position: relative;
 }
 
@@ -887,6 +885,7 @@ ul.btn li:last-child {
      width: 100%;
      background: transparent;
      color: #fff;
+     font-family: 'Poppins', sans-serif;
      font-size: 18px;
      font-weight: normal;
      padding-top: 56px;
