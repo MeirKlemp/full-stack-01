@@ -216,7 +216,6 @@ header {
  .text-bg a:hover {
      background-color: #48ca95;
      color: #fff;
-     transition: ease-in all 0.5s;
  }
 
  /* banner: */
@@ -269,3 +268,13 @@ header {
      padding-top: 25px;
      font-weight: normal;
  }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner_content {
+        flex-direction: column;
+    }
+
+    .banner_content .text-bg {
+        margin-top: 200px;
+    }
+}

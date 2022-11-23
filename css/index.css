@@ -71,6 +71,11 @@
      justify-content: space-evenly;
 }
 
+.latest-product-spec img {
+    width: 50%;
+    height: 50%;
+}
+
 
 .black_friday {
      font-family: 'Dosis', sans-serif;
@@ -110,15 +115,6 @@
 
 .black_friday_box figure {
      margin: 0;
-}
-
-.product_box {
-     display: flex;
-     flex-direction: column;
-     justify-content: end;
-     text-align: center;
-     width: 100%;
-     height: 100%;
 }
 
 a.centered {
@@ -192,7 +188,6 @@ a.centered {
 
 .send_btn:hover {
      background-color: #000;
-     transition: ease-in all 0.5s;
      color: #fff;
 }
 
@@ -221,4 +216,26 @@ a.centered {
 
 .copyright a:hover {
      color: #48ca95;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .latest-product-spec {
+        flex-direction: column-reverse;
+        margin: 0 10%;
+        justify-items: center;
+    }
+
+    .latest-product-spec img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .latest-product-container video {
+        max-width: 80vw;
+    }
+
+    .black_friday {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
