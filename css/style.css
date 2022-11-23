@@ -111,8 +111,7 @@ ul,
 li,
 ol {
      margin: 0px;
-     padding: 0px;
-     list-style: none;
+     font-size: medium;
 }
 
 p {
@@ -492,9 +491,10 @@ ul.btn li:last-child {
 .text-bg {
      text-align: left;
 }
-
-.text-bg h1 {
+.text-bg *{
      color: #fff;
+}
+.text-bg h1 {
      font-size: 81px;
      line-height: 80px;
      padding-bottom: 45px;
