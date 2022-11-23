@@ -1,82 +1,8 @@
 @import url(basic.css);
 
-header {
-     display: flex;
-     width: 100%;
-     padding: 30px 30px;
-     background: transparent;
-     position: absolute;
-     z-index: 999;
-}
-
-.logo img {
-     width: 100%;
-     height: 100%;
-     display: block;
-}
-
-.logo a {
-     font-size: 40px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: #fff;
-     line-height: 40px;
-}
-
-
-
-nav {
-     display: flex;
-     justify-content: right;
-     margin-right: 5%;
-     font-size: 20px;
-     margin-left: auto;
-}
-
-nav a {
-     color: #fff;
-     margin-right: 7%;
-}
-
-nav a:hover {
-     color: #51fe44;
-}
-
-
-.banner_content {
-     justify-content: space-evenly;
-     margin: auto 15%;
-     min-height: 900px;
-     display: flex;
-     justify-content: center;
-     align-content: center;
-     align-items: center;
-}
 
 .banner_content * {
      flex: 1;
-}
-
-.banner_main {
-     background: url(../images/banner.jpg);
-     background-size: 100% auto;
-     position: relative;
-}
-
-
-.text-bg {
-     text-align: left;
-}
-
-.text-bg *{
-     color: #fff;
-}
-
-.text-bg h1 {
-     font-size: 81px;
-     line-height: 80px;
-     padding-bottom: 45px;
-     font-weight: bold;
 }
 
 .text-bg span {
@@ -86,40 +12,6 @@ nav a:hover {
      font-weight: normal;
      padding-bottom: 18px;
      display: block;
-}
-
-.text-bg p {
-     color: #fff;
-     line-height: 28px;
-     font-weight: 500;
-     padding-bottom: 60px;
-     display: block;
-}
-
-.text-bg figure img {
-     width: 100%;
-     padding-top: 70px;
-}
-
-.text-bg a {
-     font-size: 17px;
-     background-color: transparent;
-     border: #fff solid 2px;
-     color: #fff;
-     font-weight: 500;
-     padding: 14px 0px;
-     width: 100%;
-     max-width: 215px;
-     text-align: center;
-     display: inline-block;
-     transition: ease-in all 0.5s;
-     margin-right: 10px;
-}
-
-.text-bg a:hover {
-     background-color: #48ca95;
-     color: #fff;
-     transition: ease-in all 0.5s;
 }
 
 
@@ -220,28 +112,6 @@ nav a:hover {
      margin: 0;
 }
 
-
-.products-container {
-     margin-top: 5%;
-     margin-bottom: 5%;
-     background: #f7f7f7;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-items: space-evenly;
-}
-
-.products-items {
-     flex: 1;
-     display: grid;
-     width: 100%;
-     grid-template-rows: repeat(3 ,1fr);
-     grid-template-columns: repeat(3 ,1fr);
-     justify-items: center;
-     row-gap: 1em;
-     align-items: center;
-}
-
 .product_box {
      display: flex;
      flex-direction: column;
@@ -249,23 +119,6 @@ nav a:hover {
      text-align: center;
      width: 100%;
      height: 100%;
-}
-
-.product_box h3 {
-     width: 200px;
-     color: #fff;
-     font-size: 20px;
-     line-height: 20px;
-     background-color: #252525;
-     font-weight: 500;
-     margin: 0 auto;
-     padding: 10px 0;
-     margin-top: 40px;
-     transition: ease-in all 0.5s;
-}
-
-.product_box h3:hover {
-    background: #48ca95;
 }
 
 a.centered {
@@ -347,15 +200,6 @@ a.centered {
      color: #fff;
      opacity: 1;
 }
-
-
-footer {
-     background: url(../images/footer.jpg);
-     background-size: 100% 100%;
-     padding-top: 5px;
-     text-align: center;
-}
-
 .copyright {
      margin-top: 80px;
      padding-bottom: 20px;

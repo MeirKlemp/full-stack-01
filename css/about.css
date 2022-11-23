@@ -1,0 +1,32 @@
+@import url(basic.css);
+
+.inner_posituong .header {
+    position: inherit;
+    background: #4843a3;
+}
+
+
+.text_img {
+    margin-right: -130px;
+}
+
+.text_img figure {
+    margin: 0;
+}
+
+.text_img figure img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
