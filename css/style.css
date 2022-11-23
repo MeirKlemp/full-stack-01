@@ -303,7 +303,12 @@ nav a:hover {
 }
 
 .product_box {
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
      text-align: center;
+     width: 100%;
+     height: 100%;
 }
 
 .product_box h3 {
@@ -892,7 +897,7 @@ ul.btn li:last-child {
      height: 151px;
 }
 
-.main_form .send_btn {
+     .send_btn {
      font-size: 22px;
      transition: ease-in all 0.5s;
      background-color: #48ca95;
@@ -906,9 +911,10 @@ ul.btn li:last-child {
      margin: 0 auto;
      border-radius: 40px;
      font-weight: 500;
+     text-align: center;
 }
 
-.main_form .send_btn:hover {
+  .send_btn:hover {
      background-color: #000;
      transition: ease-in all 0.5s;
      color: #fff;
@@ -1150,6 +1156,27 @@ ul.social_icon li a:hover {
      width: 100%;
 }
 
+.table_iframe{
+     height: 100%;
+     width: 100%; 
+     position: relative;
+}
 
+iframe{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     top: 0;
+     left: 0;
+     position: fixed;
+}
+
+.switch_items{
+     width: 40%;
+     height: 100%;
+     justify-content: space-evenly;
+     justify-items: center;
+
+}
 /** end laptop **/
 
