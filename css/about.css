@@ -1,10 +1,5 @@
 @import url(basic.css);
 
-.inner_posituong .header {
-    position: inherit;
-    background: #4843a3;
-}
-
 .text_img {
     margin-right: -130px;
 }
