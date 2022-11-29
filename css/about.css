@@ -1,0 +1,51 @@
+@import url(basic.css);
+
+.text_img {
+    margin-right: -130px;
+}
+
+.text_img figure {
+    margin: 0;
+}
+
+.text_img figure img {
+    width: 100%;
+}
+
+.follow-us {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.follow-us img {
+    width: 32px;
+    margin-left: 20px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #252527;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner_content .text_img {
+        margin: 30px;
+        max-width: 300px;
+        align-self: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
